@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <title>Balloon</title>
+        <style>
+		.balloon{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			border-radius: 100%;
+		}
+	</style>
+    </head>
+    <body>
+        <div class="balloon" id="balloon">
+		
+        </div>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+		<script>
+			let i = 200;
+			let j = -1;
+			const color = ['green', 'blue', 'red'];
+			const balloon = $('.balloon');
+			balloon.click(e => {
+				i = i + 10 <= 420 ? i + 10 : 200;
+				j = j + 1 < 3 ? j + 1 : 0;
+				balloon.css('width', i + 'px');
+				balloon.css('height', i + 'px');
+				balloon.css('background', color[j]);
+			});
+			balloon.mouseout(e => {
+				i = i - 5 > 200 ? i - 5 : 200;
+				j = j - 1 >= 0 ? j - 1 : 2;
+				balloon.css('width', i + 'px');
+				balloon.css('height', i + 'px');
+				balloon.css('background', color[j]);
+			});
+		</script>
+    </body>
+</html>

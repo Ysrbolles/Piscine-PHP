@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Balloon</title>
+        <style>
+            .ballon{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ballon" id="ball"></div>
+    </body>
+    <script type="text/javascript">
+        var bl = document.getElementById("ball");
+        bl.addEventListener('click', clickball);
+        bl.addEventListener('mouseout', mouseball);
+        function clickball()
+        {
+            bl.style.width = bl.offsetWidth+10+'px';
+		    bl.style.height = bl.offsetHeight+10+'px';
+            if (bl.style.backgroundColor == '' || bl.style.backgroundColor == 'red')
+		   		bl.style.backgroundColor = 'green';
+		   	else if (bl.style.backgroundColor == 'green')
+		   		bl.style.backgroundColor = 'blue';
+		   	else if (bl.style.backgroundColor == 'blue')
+		   	{
+				bl.style.backgroundColor = 'red';
+			}
+            
+		    if (bl.style.width > '420px')
+		    {
+		    	bl.style.height = '200px'
+		    	bl.style.width = '200px'
+                bl.style.backgroundColor = 'red';
+		    }
+        }
+        function mouseball()
+        {
+            if (bl.style.width > '200px')
+	     	{
+	     		bl.style.width = bl.offsetWidth-5+'px';
+	     		bl.style.height = bl.offsetHeight-5+'px';
+
+	     	}
+            
+             if (bl.style.backgroundColor == '' || bl.style.backgroundColor == 'red')
+					bl.style.backgroundColor = 'blue';
+		    	else if (bl.style.backgroundColor == 'blue')
+					bl.style.backgroundColor = 'green';
+		    	else if (bl.style.backgroundColor == 'green')
+                    bl.style.backgroundColor = 'red';
+             
+        }
+    </script>
+</html>

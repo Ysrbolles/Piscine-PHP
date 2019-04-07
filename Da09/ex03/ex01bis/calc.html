@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        input {
+            margin: 1rem;
+            flex-basis: 20vmin;
+        }
+        select {
+            margin: 1rem;
+            flex-basis: 10vmin;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" name="leftOp" id="leftOp">
+        <select name="op" id="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" name="rightOp" id="rightOp">
+        <input type="submit" value="Try me!" id="submit">
+    </div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script>
+        const submit = $('#submit');
+        const op = $('#op');
+        const leftOp = $('#leftOp');
+        const rightOp = $('#rightOp');
+        const display = str => {
+            console.log(str);
+            alert(str);
+        }
+        const useme = () => {
+            alert('Please, use me...');
+            setInterval(useme, 30000);
+        }
+        submit.click(e => {
+            let res = 0;
+            let str = '';
+            const left = Number(leftOp.val());
+            const right = Number(rightOp.val());
+            if (left < 0 || right < 0 || !leftOp.val() || !rightOp.val() || isNaN(left) || isNaN(right))
+                return (display('Error :('));
+            if ((op.val() === '/' || op.val() === '%') && right === 0)
+                return (display('It’s over 9000!'));
+            switch (op.val()) {
+                case '+':
+                    res = left + right;
+                    break;
+                case '-':
+                    res = left - right;
+                    break;
+                case '*':
+                    res = left * right;
+                    break;
+                case '/':
+                    res = left / right;
+                    break;
+                case '%':
+                    res = left % right;
+                    break;
+            }
+            str = `${leftOp.val()} ${op.val()} ${rightOp.val()} = ${res}`;
+            display(str);
+        });
+        setInterval(useme, 30000);
+    </script>
+</body>
+</html>
