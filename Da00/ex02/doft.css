@@ -1,0 +1,172 @@
+body {
+    background-color: #505050;
+}
+
+div.title {
+    background-color: #909090;
+    box-shadow: 10px 10px 10px;
+    display: flex;
+    border-radius: 10px;
+    height: 137px;
+    width: 1420px;
+    margin: 20px auto;
+}
+
+div.title>#the_42 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px;
+    width: 30%;
+    height: 90%;
+}
+
+img#reload, img#close {
+    height: 15px;
+}
+
+img#loop {
+    margin-top: 8px;
+    width: 222px;
+    height: auto;
+    margin-bottom: -18px;
+}
+
+div.stick {
+    width: 69%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.last {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto 0;
+    height: 90%;
+    width: 2%;
+}
+
+div.mather {
+    display: flex;
+    justify-content: center;
+    margin: 0 12%;
+    padding-bottom: 200px;
+}
+
+div.mather>div.Right {
+    background-color: #909090;
+    box-shadow: 10px 10px 10px;
+    border-radius: 10px;
+    height: 425px;
+    width: 140;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    padding: 5px 0;
+}
+
+div.mather>div.center {
+    background-color: #909090;
+    box-shadow: 10px 10px 10px;
+    border-radius: 10px;
+    margin: 0 15px;
+    display: flex;
+}
+
+div.mather>div.Left {
+    background-color: #909090;
+    box-shadow: 10px 10px 10px;
+    border-radius: 10px;
+    height: 425px;
+    width: 140;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+img#cluster {
+    margin: 10px;
+}
+
+img#side {
+    height: 70px;
+    width: 70px;
+    margin: 0px 25px;
+}
+
+img#eye {
+    height: 70px;
+    width: 70px;
+    margin: 7.5px 25px;
+    border: 5px solid red;
+    border-radius: 5px;
+}
+
+img#fota {
+    width: 56px;
+    height: 44px;
+    margin: 0 auto;
+    margin-top: 15px;
+} 
+
+img#book {
+    width: 57px;
+    height: 87px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+div#brick {
+    margin: 0 10px;
+    margin-top: 5px;
+    width: 120px;
+    height: 70px;
+    background: repeat url("resources/brick.jpg");
+}
+
+span {
+    font-family: 'Times', sans-serif;
+    font-size: 37px;
+}
+
+form>label {
+    font-size: 18px;
+}
+
+form>label#l2 {
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 17px
+    
+}
+
+div.field {
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 10px;
+    z-index: 1;
+    background-color: #88FF89;
+    box-shadow: 10px 10px 10px;
+    border-radius: 10px;
+    width: 521px;
+    height: 171px;
+    margin-top: 525px;
+    margin-left: -510px;
+}
+
+shadow {
+    text-shadow: 4px 6px 8px red
+}
+
+input[type="button"] {
+    box-shadow: inset 0px 0px 9px 4px lightgrey;
+    border: 1px solid grey;
+}
+
+input[type="text"] {
+    box-shadow: 0px 0px;
+}

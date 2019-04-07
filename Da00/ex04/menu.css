@@ -1,0 +1,82 @@
+li {
+    list-style-type: none;
+    position: relative;
+    width: 140px;
+    padding: 2px;
+    margin: 0px;
+
+}
+
+.bolles{
+  position: flex;
+ 
+margin-top: 50px;
+margin-left: 35%;
+
+}
+
+ul.m1{
+    margin: 0 auto;
+  width: 2000px;
+}
+.m1 li{
+    float: left;
+    width: 300px;
+    padding: 20px;
+}
+ul.m2{
+    border-radius: 10px 10px ;
+    display: none;
+    left: -2px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 49px;
+        color: blanchedalmond;    
+    background:  linear-gradient(black, rgb(180, 180, 102));
+    
+}
+.Tacos{
+    background-color: bisque;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 20px;color: blanchedalmond;    
+    background:  linear-gradient(black, rgb(180, 180, 102));
+}
+.Burgers{
+    background-color:aqua;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 20px;
+    color: blanchedalmond;    
+    background:  linear-gradient(black, rgb(180, 180, 102));
+}
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: red; 
+   background-image:  linear-gradient(black, rgb(180, 180, 102)); 
+  
+}
+.MenuKids{
+    background-color:blanchedalmond;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 20px;color: blanchedalmond;    
+    background:  linear-gradient(black, rgb(180, 180, 102));
+}
+.Boissons{
+    background-color: cornsilk;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 20px;
+    color: blanchedalmond;    
+    background:  linear-gradient(black, rgb(180, 180, 102));
+}
+
+div{
+   margin-left: 15%
+}
+li:hover ul.m2, li li:hover {
+    display: block;
+}

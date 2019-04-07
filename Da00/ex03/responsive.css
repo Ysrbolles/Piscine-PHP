@@ -1,0 +1,60 @@
+body{
+    background-image: url("https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/444740/b28cdc864538e7f71a0c43d5a0814f4cd78d1cbb.jpg");
+}
+*{
+    margin: 0;
+}
+h2{
+    font-size: 1vw;
+    text-align: center;
+}
+table{
+    width: 100%;
+    height: 100%;
+   position: absolute;
+}
+td{
+    position: relative;
+}
+h5
+{
+    font-size: 0.5vw;
+}
+.yellow{
+    background-color: yellow;
+}
+.orange{
+    background-color:orange;
+}
+.green_bold{
+    background-color: #88d8b0;
+}
+.green{
+    background-color: green;
+}
+.magent{
+    background-color: magenta;
+}
+.blue_bold{
+    background-color: blue;
+}
+.blue_white{
+    background-color: #f2f2f2;
+}
+.grey{
+    background-color: gray;
+}
+.bold_orange{
+    background-color:purple;
+}
+.violet{
+    background-color: violet;
+}
+.masse{
+    text-align: right;
+    font-size: 1vw;
+}
+.num{
+    text-align: left;
+    font-size: 1vw;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Day of the 42</title>
+        <link rel="stylesheet" href="./scumm.css" type="text/CSS" />
+        
+    </head>
+    <body>
+        <div class="title" id="tl">
+            <img src="resources/day_of_the_42.png" id="the_42"/>
+            <div class="stick">
+                <img src="resources/loupe.png" id="loop"/>
+                <div class="last">
+                    <a href="scumm.html">
+                        <img alt="Recommencer au debut" src="resources/reload.png" id="reload"/>
+                    </a>
+                    <a>
+                        <img alt="Deconnecter" src="resources/close.gif" id="close" />
+                        </a>
+                </div>
+            </div>
+        </div>
+        <div class="mather" id="mather">
+            <div class="Right">
+               <img id="avns" alt="Avancer" src="resources/arrow.png"/>
+               <a href="https://1337.ma/"><img id="side" name ="main" alt="Prendre" src="resources/main.png" /></a>
+               <a href="https://www.hbo.com/movies/the-meg" ><img id="eye" alt="Regarder" src="resources/oeil.png"/></a>
+                <a href="https://spacetoon.com/" ><img id="side" name="setting" alt="Utiliser" src="resources/outil.png"/></a>
+                <img id="chat"  alt="Parler" src="resources/chat-icon.png" onclick="toggle_visibility('chatbox');"/>
+            </div>
+            <div class="center">
+                <img id="cluster" src="resources/cluster.jpg" usemap="#42map">
+                <map name="42map">
+                    <area shape="rect" coords="335,335,464,464" alt="Chair" href="https://www.ikea.com">
+                    <area shape="rect" coords="808,322,998,471" alt="MAC" href="https://apple.com">
+                </map>
+            </div>
+            <div class="Left">
+               <a href="https://www.booksjuice.com/"> <img id="book" src="resources/book.png" /></a>
+               <a href="https://www.wish.com/search/towels"><img id="fota" src="resources/towel.png"></a>
+               <a href="https://stockx.com/supreme-clay-brick-red"> <div id="brick">
+                   <img src="resources/brick.jpg">
+                </div></a>
+            </div>
+            <div class="field" id="chatbox">
+            <form>
+                <label style="font-family: sans-serif">Vous <span>entrez</span> alors dans une grande piece remplie d'<shadow>ordinateurs</shadow>...</label>
+                <br/>
+                <label id="l2">- Bonjour, vous êtes nouveau ici ?</label>
+                <br/>
+                <input type="text" style="width:75%" id="rp">
+                <input type="button" value="Repondre" id="ok">
+            </form>
+        </div>
+        </div>
+        <script src="JS/scumm.js"></script>
+        <script type="text/javascript">
+          function toggle_visibility(id) {
+                var e = document.getElementById(id);
+                 if(e.style.display == 'block')
+                    e.style.display = 'none';
+                else
+                    e.style.display = 'block';
+                 }
+    var ok = document.getElementById("ok");
+   ok.addEventListener("click", function(){
+      ouinon(event);
+   });
+    function ouinon(event)
+   {
+       event.preventDefault();
+       var r = document.getElementById("rp").value;
+       var q = document.getElementById("l2")
+       if (r == "non")
+       {
+        
+           q.innerHTML  = "OK bye..";
+           inis("rp");
+           disableTxt("rp");
+       }
+        else if(r == "oui")
+        {
+            inis("rp");
+            q.innerHTML  = "slem 3lik Bolles!";
+                alert("Hello! Mrehba Bik!");
+        }
+       
+    }
+    function inis(id)
+    {
+        document.getElementById(id).value = "";
+    }
+    function disableTxt(id) {
+    document.getElementById(id).disabled = true;
+    }
+
+        </script>
+    </body>
+</html>
